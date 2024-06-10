@@ -1,0 +1,72 @@
+Java JLabel
+
+A Jabel is a GUI component for a JFrame.
+
+it cts as a display area for a string of text an image or both
+
+for the first part you need a frame to add labels so you ened to create a frame with default vaue nothing to fancy just something to work with.
+
+then import the abel class from the swing package
+
+
+import java.swing.JLabel;
+
+JLabel label = new JLabel("optional string");
+
+to set text to a labe you use the
+
+.setText("string") method
+
+or you can put it in the parameters where you created a instance of the JLabel class
+to add a image to that label you use the .setIcon() to do that. you can also use the same ImageIcon class from our other file to create a imageIcon but im pretty sure you can just use the file class from the util package to fill in the parameters with a valid image
+
+
+then you must add the label to the frame using the
+
+frame.add(label); 
+
+by default swing centers the label verticaly while pushing everything to the left on the horizontal axis and when you add an image to a label it puts the text on the right of the image to change it you can use
+
+label.setHorizontalTextPosition(JLabel.CENTER| JLabel.LEFT | JLabel.RIGHT) as defualt the position is set to rith
+
+JLabel Methods.
+
+
+.setText("string") sets the text of a Jlabel
+
+.setIcon("image.png") adds an image to a jlabel. must be an Icon
+
+.setHorizontalTextPosition(JLabel.CENTER/LEFT/RIGHT) sets the  text on the center,left, or right of the image icon
+
+.setVerticalTextPosition(JLabel.TOP/CENTER/BOTTOM) 
+sets the  text on the top,bottom, or center of the image icon
+
+
+.setForeground(color) sets the color of text in a label
+
+.setFont(font, Font.PLAIN/BOLD/ETC, size) allows you to set the font of text in a label. allows you change the font style and size
+
+new Font("Aerial", Font.PLAIN, 10)
+.setIconTextGap(int) allow you to set the gap between an image and text, the ower the value the closer it wi be to the image
+
+.setBackground(color) sets background color
+
+.setOpaque(bool) this allows a label to paint pixes within its bound meaning it allows the label to paint over pixels that are within its rectangle or whatever. by default is false
+
+.setBorder(border) alllows you to set a border on the label which will encase the label.
+to create a border you import javax.swing.border.Border
+and create on Border border = BorderFactory.createLineBorder(color, size)
+there are other types of borders as well.
+
+.setVerticalAlignment(JLABEL.CENTER/TOP/BOTTOM) set the vertical position of the icon and image with the label
+
+.setHorizontalAlignment(JLABEL.LEFT/RIGHT/CENTER) set the Horizontal position of the icon and image with the label
+
+.setLayout(manager)
+
+the layout manager of label defines how big it should be and how much space should try to take up. by default it border which i think makes it go al the way to the window borders
+
+setting it to null allows you to set the bounds for the label
+.setBounds(x,y,width,height) allows you to set the position and dimensions of a label 
+
+frame.pack(); automaticaly adjust the frame to fit all the components contained inside of it makind it so you dont need to specify a width,height or a layout manager.must use after you add the label or the frame will be like "where were you when i was packing?"

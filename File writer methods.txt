@@ -1,0 +1,7 @@
+File writer methods
+
+write() takes in a string or char that will right to a file
+close() closes the writer to tel the code your done using it
+append() appends a string or charecters to the end of your file
+
+make sure you turn the byte code into characters

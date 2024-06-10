@@ -1,0 +1,16 @@
+JFileChooser is a GUI mechanism that lets a user choose a file
+
+import javax.swing.JFileChooser
+
+JFileChooser fileChooser = new JFileChooser();
+
+fileChooser.showOpenDialog(parent/null) allows to open file
+
+returns an interger as a response.
+
+0 yes
+
+1 cancel
+
+File file = new file(fileChooser.getSelectedFile())
+

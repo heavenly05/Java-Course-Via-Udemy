@@ -1,0 +1,17 @@
+File Reader methods
+
+read() reads the contents of a file as a stream of characters (the data type) one by one. it returns a int shcih contains the byte value.if tit returns negative 1 that means it has finished reading the file
+
+read returns only one character each time so youd have to read it multiple times one thing you can do is use a while loop.
+
+int data = reader.read();
+
+while(data > -1){
+//things to do with data like you can print it out on the same ine using print
+data = reader.read()
+the last line makes it read the next result and it keeps going unti the fie is done being read
+}
+
+ready() returns true or falso if the stream is ready to be read
+
+make sure you turn the byte code into characters by casting

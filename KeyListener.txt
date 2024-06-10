@@ -1,0 +1,56 @@
+KeyListener
+
+
+implement the KeyListener interface onto your frame and implement the method public void KeyTyped(KeyEvent e)
+
+KeyPressed
+
+KeyReleased
+
+frame.addKeyListener(frame)
+
+e.getKeyChar() gets the character
+
+e.getKeyCode() gets the number 
+
+label.setLocation(x,y )
+
+label.getX() - 1 to get new numbers same with y
+
+
+
+
+
+
+
+
+mouse listener
+
+
+
+
+
+
+
+implement MouseLister onto jframe
+
+on components you can use .addMouseListener
+
+mouseClicked(MouseEvent e)
+
+mousePressed
+
+mouseReleased
+
+mouseEntered
+
+mouseExited 
+
+one thing you can do is make a frame implement the MouseListener 
+
+and override the method you want and you can make a component use the frame as a mouse listener because frame is technically now a mouse listener
+
+
+there is also such thing as a click listener which is a class
+
+also a drag listener

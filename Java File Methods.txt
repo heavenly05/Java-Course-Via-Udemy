@@ -1,0 +1,30 @@
+Jav File Handling
+
+the File class from the java.io package allow us to work with files.
+to use it you must make a file object, 
+
+File myFile = new File("filename.txt); i think this will be the file you pan to work with wheter it be create, edit or eveen deete. it has MANY methods you can use like:
+
+canRead() tests wheter if the file can be read
+
+canWrite() tests wheter the file can be wrote
+
+createNewFile() creates an empty file.
+
+delete() deletes a file
+
+exists() tests wheter the file exists
+
+mkdir() makes a new folder/directory
+
+everything above returns true if the operationw as succesfu or not
+
+getName() returns the file name of the fie
+
+getAbsolutePath() {returns the absolute pathname of the file
+
+length() returns othe size of the file
+
+list() returns an array of file in the direectory
+
+theres a FileWriter class that has a write() method to write text to a file. when done writing to file you use the .close() method 

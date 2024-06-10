@@ -1,0 +1,14 @@
+Things to do t start block demo
+create a class for creating square, add properties like velocity and position
+
+in the class constructor define a container for the fillRect method that takes in the properties you need
+
+you may need to make custom functions that redraw the square everytime you change a value
+
+
+create an array lsit of the square class so you can hold in the things
+
+you will need an update method that will be ran by a timer every few milliseconds.
+
+
+to check if a square has collided you need a nested loop that checks the objects sides, bottom and top and then reverses its velocity by multiplying the current velocity by -1

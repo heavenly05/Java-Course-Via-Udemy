@@ -1,0 +1,25 @@
+Java JPanel
+
+JPanel is GUI component that holds other components (labels,buttons,text, etc)
+
+its used to sort and section parts of a frame
+
+javax.swing.JPanel;
+
+JPanel panel = new JPanel
+
+here are some methods of the panel class
+
+.setBackground(color) used to change the background color of a panel
+
+.setBounds(x, y, width, height); used to set the ayout of the panel if there is no layout manager on the window
+.add(component) to add components tot he panel like labels
+
+
+you use frame.add(panel) to add panels to the window
+
+A JLayeredPane is the exact same as a normal panel except that it can position elemnts on top of other elements.
+
+when you add components/elements to a layered pane they will automtically layer themselves, the first element added being placed on top and the others being placed underneath. however when you add a element you can use z indexing to place them.
+
+lpane.add(label, Interger.valueof(0)); that will be placed at the very back higher numbers for it to be closer to the front.

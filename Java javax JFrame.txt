@@ -1,0 +1,42 @@
+Java javax JFrame
+
+A JFrame is a GUI window that  you can dd components to.
+a JFrame is a class from the swing package.
+
+it has a bunch of predefined methods to help you create a GUI though i dont think this is the oruginal one it seems to be a library/framework and i dont really like that.id rather use the original class for the gui to get more of a feel for it but you can sti use this. 
+
+To use JFrame you must import the class from the swing package.
+
+import javax.swing.JFrame;
+
+JFrame frame = new JFrame(); //creates a frame.
+
+//methods
+
+
+.setTitle("Title") title of the window by defaut its nothing
+
+.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); by defauld its set to JSFRAME.HIDE_ON_CLOSE it doesnt close it just hides in the background.
+
+.setResizable(false); allows the user to rescale the window by default its true
+
+frame.setSize(420,420); sets the width and heigh of the fame using x and y by default its like 1
+
+frame.setVisible(true); makes the frame visible by defaullt its false
+
+if you want to change the icon image you mustcreate a icon image from the ImageIcon class
+
+import javax.swing.ImageIcon;
+
+ImageIcon image = new ImageIcon("path to image");turns any sized image into a icon
+
+personally i just import everything from the swing class so i can use multiplle classes
+frame.setIconImage(image.getImage()) change icon to image
+
+.getContentPane().setBackground(Color.green) you must import the color class before using a color thing using
+
+import java.awt.Color, you can use hex,rgb and more
+
+new Color(0,0,0) or you can put in a hex value
+
+the jframes position and height includes the bar at the top with the x and stuff. so it will always be good to use panels for your components.

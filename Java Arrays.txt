@@ -1,0 +1,51 @@
+Java Arrays
+
+arrays have curly braces insted of brackets.
+
+muti dimensional array are arrays that contain arrays and you use String[][] 2 brackets instead of one to create them
+
+add more brackets for more rown and columns of arrays
+
+ike python, when you create an array in java you cant add or remove elements so when you first ccreate an array you cant edit it. theres a class in the util  package called ArrayList that allows you to add and remove things from arrays and more.
+
+to do so you use ArrayList<String> cars = new ArrayList<String>();
+doing so will allow you to use many methos like, cars.add("Beetle"), 
+cars.get(0), 
+
+cars.set(0, "Opel"),
+
+cars.remove(0), cars.clear(remove al aelemnt ignore this), cars.size(), and you can use size to oop through an array
+there are many classes like collectio  that hav the sort method too theres another class called LinkedList whchis like array list but it like is better for manipulating dta
+
+there is something in the Arrayist class caled hash maps which are basically objects. they store things in key vaue pairs. it can not ony store different types but it can also hae different value keys.
+
+
+import java.util.HashMap;
+
+HashMap<String, String> cities = new HashMap<String, String>();
+that creates a hashmap with string keys and string values.
+
+if you dont specify the key or value pairs you can use whatever 
+values you want in it.
+
+to put things in it you use .put("Englnd", "London")
+to access an item/get a value you use .get() on a key 
+.remove() you should know that deletes a item using a key
+.clear() clears the entire array
+.size() gets the size of the hashmap
+
+you can oop through it using a for each oop, you can use .keySet() if you only want the keys and .values() if you ony wanna oop through the values. ou just ave to dd it at the end of the map
+
+
+A hashet is a collection of items where every item is unique meaning only one thing can appear once in the array. very useful.
+
+import java.util.HashSet
+
+HashSet<String> dogNames = new Hashset<String>();
+
+it uses all the other methods and it has a few special ones for itself .contains() checks if the set contains a value
+
+
+they are very fast and they also are unordered
+
+if you want to create 2d array aka multi dimensionel arrays using array liist you can do t by insted of passing just a string data type pass a ArrayList String instead that will mean the array list will hold other array list that hold strings only.

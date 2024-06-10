@@ -1,0 +1,84 @@
+Java Timer
+
+A timer in java is a mechanism that can execute a event everytime the timer fires.
+
+Timer timer = new Timer(int delay, ActionListener)
+
+timer.start()
+
+timerTask
+
+new TimerTask(){
+  @kOverride
+    public void run(){
+ 	taskt to run when schheduled
+}
+}
+
+  .shedule(task, time)
+
+  .scheduleAtFixedRate(taske, delay, when to start i think)
+a scheduled event that the the timer will do during the specified time when the timer is started.
+
+there are diffferent types of timers. the timer you need to schedule events is the Timer from the utility package.
+
+the package for the timer to run action listeners is from the swing package i think
+
+action litener is basically the gateway to acto events.
+
+say you have a timer right and its in a class that implements the actionlistener
+
+when you use the this keyword the timer treats the class as an action listener
+
+the action listener awaits calls/events from components and thing, like buttons or timers anything really.
+
+the timer goes to the action listener and is like "Hey I have an event! You should run your methodthat you have!"
+
+the timer sends things over to the action listener containing information about its event like the timersname and address in memory.
+
+the actionlister goes"Ok sure!"
+
+and it will run its method from its inteface which is actionPerformed. the timer basically tells the action listener to run but doesnt tell it what to run.\\thats wjhy it send ovr information like with a button when you click it and the action listener uses it method you can use the e.getSource to get the source of the thing tha triggered the action.
+
+
+
+good idea for creating games and doing collision detection,
+
+when you want the player to stop moving when they touch a wall you can do something like
+
+if(player.x > object.width-player.width)
+
+this is optional but it basically creates like a slot for the player and if the player fits in the slot then it does soemthing like:
+
+player width
+-----
+	object width
+---------------------------
+
+		     -----
+---------------------|    | object-playerwidth
+                     -----
+
+now what you can do is so funny look:
+
+if(player.x > object.width-player.width){
+   player.xVelocity *= -1
+}
+
+what that does is it reverses the players direction.
+
+velocity is speed but with direction so positive is right and negative is left.
+
+if the player is moving 1 pixel per second and hits the wall then its velocity will be multiplied by -1. 1 * -1 = -1 so you player will start moving to the left.
+
+soemthign even funnier you can do is: 
+
+if(player.x > object.width-player.width || player.x < object.positionx + object.position.width){
+   player.xVelocity *= -1
+}
+
+this will make do the same thing but for the left wall basically saying if the left side of the player hits the left side of the object then reverse the objects velocity again!
+
+  
+
+

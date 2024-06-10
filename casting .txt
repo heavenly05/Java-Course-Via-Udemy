@@ -1,0 +1,70 @@
+casting 
+
+casting is a fancy word for type conversion
+
+there are 2 types of casting in java, automatic and explicit casting
+
+automatic type conversion happens when java automatically converts a values type to a different one and explicit ype conversion is when the programmer converts one type to another.
+
+automatic type conversion
+
+When one type of data is assigned to another type of variable, an automatic type conversion 
+will take place if the following two conditions are met:
+• The two types are compatible.
+• The destination type is larger than the source type.
+When these two conditions are met, a widening conversion takes place. For example, the 
+int type is always large enough to hold all valid byte values, so no explicit cast statement is required.
+
+widening conversion means that a value will get bigger
+
+byte ->  short -> int -> long
+
+automatic conversion only supports widening conversion meaning it will only cast a value if it needs to get bigger.
+
+
+explicit casting
+
+Casting Incompatible Types
+Although the automatic type conversions are helpful, they will not fulfill all needs. For example, what if you want to assign an int value to a byte variable? This conversion will not be performed automatically, because a byte is smaller than an int. This kind of conversion is sometimes called a narrowing conversion, since you are explicitly making the value narrower 
+so that it will fit into the target type
+
+
+narrowing casting happens when a number needs to get smaller.
+
+this means the programmer can cast a number up or down explecitally when they want to.
+
+byte ->  short -> int -> long (widening conversion)
+
+long -> int -> short -> byte (narrowing conversion)
+
+remember java automatically uses widening casting when applicable
+
+to cast a value to a different type you use (type) before the variable for example:
+
+int a = 100;
+
+100 is small enough to fit into a byte and it would be better for memeory it hink.
+
+byte b = (byte) a;
+
+to put it in more perspective you provide a container for the casted value and you then put the casted value in the container
+
+hard to get into but when you try to cast a value too out of range for a thing like a byte then the byte will modulous (%) will divide the number by 256 which is the range because thats how many characters there are in a byte in total
+
+to put in more prspective a byte number can be through -128 and 127
+
+this means they have 2 ranges, negative range and positive range.
+
+the positive range is 127
+
+the negative range is 128 
+
+add them together and you get the total range which is 256.
+
+you have to include 0 so thats what i think its a extra one
+
+anyway the computer sets the remainder of the converting number and the range of the type to the byte
+
+
+
+

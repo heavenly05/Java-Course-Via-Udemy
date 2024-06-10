@@ -1,0 +1,42 @@
+Java Audio
+
+youtube audio library got some free sounds yk
+
+so before you do audiou you need audio files but they cant be mp3 files recommended .wav audio files.
+
+you need to imprt the sampes sound class from the javax packackge.
+
+import javax.sound.sampled.*
+
+that will import everything from the sampled class.
+
+you will then need to get the file. you can do that by using the file class from the io package
+
+import java.io.File;
+
+File audio = new File("audioFile.wav");
+
+you then need to use AudioInputStream 
+
+AudioInputStream stream = AudioSystem.getAudioInputStream(audio);
+
+then you need to get the clip
+
+Clip clip = AudioSystem.getClip();
+clip.open(audioStream);
+clip.start();
+
+the program wil create a background task but when the program runs out of code to run it will not wait for background tasks to finish. you must create somethign to make the program not terminate itself before the background task is finished. you can use scanner to wait for user input or opena  gui window.
+
+import java.util.Scanner;
+
+Scanner scanner = new Scanner(System.in);
+String input = scanner.next();
+
+since the progrm is waiting for input it will not terminate
+
+
+.start() starts the song from whatever point of time its in
+.stop() pauses playback
+.setMicrosecondPosition(0) to reset or change the time
+.close() xoses the clip

@@ -1,0 +1,13 @@
+recursive methods
+
+recursive methods are  methods that call themselves.it can be done by just calling the method inside the method
+
+public static int add2NumsTwice(int a, int b){
+    int result = a + b;
+
+    return result + add2NumsTwice(a, b);
+}
+
+System.out.println(2,2)
+
+the result would be 8.

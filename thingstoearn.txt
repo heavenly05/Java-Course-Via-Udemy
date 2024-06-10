@@ -1,0 +1,30 @@
+go down the list and write complete whenever youve completed a section
+
+Java Syntax: Understanding the rules for writing valid Java code is essential.
+done
+
+Variables and Data Types: Learn how to store and manipulate data in your programs.
+done
+
+Operators: Familiarize yourself with arithmetic, relational, and logical operators.
+done
+
+Control Flow Statements: This includes if, else, switch, while, do-while, and for loops.
+done
+
+Object-Oriented Programming (OOP): Grasp the concepts of classes, objects, inheritance, polymorphism, and encapsulation.
+done
+
+Exception Handling: Learn how to handle errors gracefully in your programs.
+
+
+Collections Framework: Understand how to use various data structures like lists, sets, and maps.
+
+
+Input/Output (I/O): Learn how to handle input and output, including reading from and writing to files.
+
+
+Multithreading: Explore how to write programs that can perform multiple tasks simultaneously.
+
+
+Java Development Kit (JDK) and Java Runtime Environment (JRE): Learn about the tools and environment needed for Java development

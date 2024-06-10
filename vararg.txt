@@ -1,0 +1,49 @@
+In Java, the ... (three dots) is used to denote varargs (variable-length argument lists) in method parameters. Let’s dive into what this means:
+
+Varargs (Variable-Length Argument Lists):
+When you see ... in a method parameter, it indicates that the method can accept zero or more arguments of the specified type.
+It’s particularly useful when you want to create a method that can handle an arbitrary number of arguments without explicitly specifying each one.
+Here’s how it works:
+Java
+
+public void printNumbers(int... numbers) {
+    for (int num : numbers) {
+        System.out.print(num + " ");
+    }
+}
+AI-generated code. Review and use carefully. More info on FAQ.
+Example Usage:
+Suppose we call the printNumbers method like this:
+Java
+
+printNumbers(1, 2, 3, 4, 5);
+AI-generated code. Review and use carefully. More info on FAQ.
+The numbers parameter inside printNumbers will be treated as an array of integers containing the values 1, 2, 3, 4, and 5.
+The method will then iterate through this array and print each number.
+Other Use Cases:
+Varargs are commonly used in methods like printf in Java’s System.out class, where you can pass a variable number of arguments to format a string.
+For example:
+Java
+
+System.out.printf("Hello, %s! Your age is %d.%n", "Alice", 30);
+AI-generated code. Review and use carefully. More info on FAQ.
+Remember, the ... syntax is a powerful tool for creating flexible methods that can handle varying numbers of arguments. 🚀
+
+
+
+A method can have “normal” parameters along with a variable-length parameter. 
+However, the variable-length parameter must be the last parameter declared by the 
+method. For example, this method declaration is perfectly acceptable:
+int doIt(int a, int b, double c, int ... vals) {
+In this case, the first three arguments used in a call to doIt( ) are matched to the first three 
+parameters. Then, any remaining arguments are assumed to belong to vals.
+Remember, the varargs parameter must be last. For example, the following declaration 
+is incorrect:
+int doIt(int a, int b, double c, int ... vals, boolean stopFlag) { // Error!
+Here, there is an attempt to declare a regular parameter after the varargs parameter, which 
+is illegal.
+There is one more restriction to be aware of: there must be only one varargs parameter. 
+For example, this declaration is also invalid:
+int doIt(int a, int b, double c, int ... vals, double ... morevals) { // Error!
+The attempt to declare the second varargs parameter is illegal.
+Here is a reworked version of the vaTest( ) method that takes a regular argument and a 

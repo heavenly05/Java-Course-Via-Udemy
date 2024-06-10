@@ -1,0 +1,40 @@
+Documentation comments in Java, also known as Javadoc comments, are special comments that start with /** and end with */. They are used to describe Java classes, interfaces, methods, and fields. Here’s what they’re for and how to use them:
+
+Purpose:
+To provide an official description of code elements.
+To be extracted by the Javadoc tool to generate HTML documentation123.
+Usage:
+Place them directly above the code element you want to document.
+Use Javadoc tags like @param, @return, @throws, etc., to provide specific details3.
+Here’s an example of a Javadoc comment for a method:
+
+Java
+
+/**
+ * Calculates the sum of two integers.
+ *
+ * @param a the first integer
+ * @param b the second integer
+ * @return the sum of a and b
+ */
+public int add(int a, int b) {
+    return a + b;
+}
+
+
+Javadoc comments are incredibly useful for developers who will read your code in the future.ncluding yourself. They help everyone understand what the code is supposed to do, how to use it, and what to expect from it.
+
+
+there are several Javadoc tags that you can use to document different aspects of your code. Here are some of the common ones:
+
+@param: Documents a method parameter1.
+@return: Documents the return value of a method1.
+@throws or @exception: Documents an exception thrown by a method1.
+@see: Provides a see-also link to another topic1.
+@since: Indicates the version when the element was added1.
+@deprecated: Marks the element as deprecated and usually includes what to use instead1.
+@author: Documents the author of the code1.
+@version: Indicates the version of the code1.
+@link: Provides an in-line link to additional information2.
+@code: Displays text in code font without any further processing2.
+These tags help create a comprehensive documentation that can be converted into an HTML format by the Javadoc tool, making it easier for others to understand and use your code.s

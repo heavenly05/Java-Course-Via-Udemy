@@ -1,0 +1,54 @@
+Java Lamda
+
+to pass a lamda expression as a argument to a method in java you must import the class java.util.function.IntBinaryOperator;
+
+IntBinaryOperator will be the type for theexpression for example:
+
+IntBinaryOperator myLambda = (a,b) -> {//code to run}
+
+and in a method you can go like: 
+static int addNums(IntBinaryOperator customFunction) {
+	
+}
+
+those are built in interfaces to create custom lambda expressions that one allows you to create a custom lamda expression with two integers as the parameters.
+
+to get custom parameters you need to create your own interface.
+
+to explain it in more detail the class that implements the interface are forced to provide "bodies" {} for each method in an interface they are also forced to provide parameters
+
+BUT the interface provides the method name and the types and amount of the parameters in a method 
+
+in the way they want us to explain it interfaces are classes that contain only abstract methods which are emthods with no  bodies
+
+It cannot be used to create objects (in the example above, it is not possible to create an "Animal" object in the MyMainClass)
+Interface methods does not have a body - the body is provided by the "implement" class
+On implementation of an interface, you must override all of its methods
+Interface methods are by default abstract and public
+Interface attributes are by default public, static and final
+An interface cannot contain a constructor (as it cannot be used to create objects)
+Why And When To Use Interfaces?
+To achieve security - hide certain details and only show the important details of an object (interface).
+
+Java does not support "multiple inheritance" (a class can only inherit from one superclass). However, it can be achieved with interfaces, because the class can implement multiple interfaces. Note: To implement multiple interfaces, separate them with a comma (see example below).
+
+ implements FirstInterface, SecondInterface'
+
+
+
+
+action litener is basically the gateway to acto events.
+
+say you have a timer right and its in a class that implements the actionlistener
+
+when you use the this keyword the timer treats the class as an action listener
+
+the action listener awaits calls/events from components and thing, like buttons or timers anything really.
+
+the timer goes to the action listener and is like "Hey I have an event! You should run your methodthat you have!"
+
+the timer sends things over to the action listener containing information about its event like the timersname and address in memory.
+
+the actionlister goes"Ok sure!"
+
+and it will run its method from its inteface which is actionPerformed. the timer basically tells the action listener to run but doesnt tell it what to run.\\thats wjhy it send ovr information like with a button when you click it and the action listener uses it method you can use the e.getSource to get the source of the thing tha triggered the action.

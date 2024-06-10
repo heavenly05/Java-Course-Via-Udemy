@@ -1,0 +1,130 @@
+Class Constructor
+
+to create a constructor in java you just reference the casses name like a function like:
+
+className(parameters){
+//things to do
+}
+
+public class dog{
+    String Dogname;
+    dog(String name){
+        this.Dogname = name;
+    }
+    public void sayName() {
+      System.out.printf("The dogs name is %s",this.Dogname);
+    }
+  }
+
+
+another thing is you can reference classes in oteher files int he same project without importing them! as long as the class in the other file is public you can use it in the other file along with variable like static one
+
+you can also use the this keyword so dont fret
+
+you can also create overloaded constructors. 
+
+overloaded methods are methods/functions that can have the same name as another function but different parameters.
+
+heres another instance of our code file to show how to use enums,overclocked methods classes this and key words.
+
+public class dog{
+    String Dogname;
+    int age;
+    Gender gender; 
+   static final String Species = "Canis Lupis";
+    dog(String name){
+        this.Dogname = name;
+    }
+    dog(String name, int age){
+      this.Dogname = name;
+      this.age = age;
+    }
+    dog(String name, int age, Gender gender){
+      this.Dogname = name;
+      this.age = age;
+      this.gender = gender;
+    }
+    public void sayName() {
+      System.out.println("The dogs name is "+ Dogname);
+    }
+    public void sayNameNAge(){
+      System.out.println("The dogs name is "+ Dogname + " and is " + this.age + " years old.");
+    }
+    public void sayNameAgeNSex(){
+      System.out.println("The dogs name is "+ Dogname + " and " + this.gender + " is " + this.age + " years old.");
+    }
+  }
+  enum Gender{
+    she,
+    he
+  }
+
+in our main file this is what our code is;
+
+dog myDog = new dog("Thomas", 10, Gender.he);
+    myDog.sayNameAgeNSex();
+this is the output:
+The dogs name is Thomas and he is 10 years old.
+
+
+
+
+innheretance in java is the process where one class aquires the attributes and methods of another class.
+
+when something extends another class everything in the parent class is immediately copied to the child cllass meaning if you have a method in the parent class even if you wrote nothing in the child class the method will still be there.
+
+go to the Jeva folder and ook in the jeva code first jeva folder and that shoud hep you greatly.
+
+you can override methods by just using the same method name that was used in the parent class
+
+super is used to get the values from a parent objects constructor i THINK
+
+it goes like
+
+//parent 
+
+constructor(name, age){
+    this.name = name;
+    this.age = age;
+}
+
+//child;
+
+super(name, age)
+
+grabs the stuff rom the constructor or whatever idk go do research or something
+
+
+Interface in java script is a useful thing. its similar to extends but it forces a class that impements it to provide it with the values it wants.
+classes can implement more than one interface. can only have one super. heres an example
+
+//prey.java
+
+public interface Prey{
+ void flee();//doesnt need a body, the class that impements it will provide one
+}
+//rabbit.java
+public class mouse implements Prey{
+	public void flee(){
+	System.out.println("The surviva mechanism in the rabit tells it to flee");
+  }
+}
+//main.java
+rabbit rabbit new rabbit();
+rabbit.flee();
+
+if the rabbit class doesnt  provide the flee method it wi result in an error
+
+to implant multiple interfaces you just use a commas
+
+polymorphism in java is the ability for objects to identify as more than one type.
+
+for exampe when you extend a class from another class it is like a custmizable copy of the parent class. meaning therefore its type is still the parent class but since its customizable you can create your own name for the class.
+
+thats polymorphism an abject can have 2 data types and extends is just one instance of it in action
+like a corvette can identify as a corvette, a car, a vehicle and an object all at the same time
+
+if you are changing. customizng a method in a child element of a class and are trying to make it do somethign different than what it originally did in the paarent method you must add the @override tag above it
+
+dynamic polymorphism is the ability of an object to have many forms or shapes after the program has started running
+fairly simple one of the things you can do is give the choice to the user, like asking them what kind of animal they want, a dog or a cat?

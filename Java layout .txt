@@ -1,0 +1,81 @@
+Java layout 
+
+A layout manager in java defines the natural  layout for components within a container, frames and panels for example
+
+there are 3 common managers/layouts
+
+BoderLayout - places components in 5 diferent areas North, South, West, East, Center.
+
+basically it pushes desired components to sides of the border
+
+all extra space is placed in the center
+
+NORTH/SOUTH - can expand horizntaly but not vertically. they are fixed to the bottom or top of the container. setting the width of the component will have o effect.
+
+
+WEST/EAST - can expand vertically (get longer) but not horzontally. they are fixed to the sides of the container
+setting the height will have no effect
+
+CENTER - can expand vertically and horizontally. it is fixed to the center/middle of a container
+
+to apply the border layoutto a container you have to set the layout to panel/frame.setLayout(new BorderLayout())
+
+you can apply margins to the width and height of the components in the container by passing in numbers to the new BorderLayout method
+
+new BorderLayout(10, 0) //width then height
+
+to set the area in which a component will be placed you have to set that when you first addthe component to the container.
+
+frame.add(panel1, BorderLayout.NORTH)
+
+that pushes the panel to the north border. its width be automaticlly resized when the frame is resized. vice versa with WEST and EAST.
+
+thats it for border layout.
+
+FLOW LAYOUT
+
+places components in a row sized at their preffered size. if the horizontal space in the container is too small for a component it will move the component to the next row.
+
+basically flexBox css but with only row
+
+to set the layout to flow of a container you have to go:
+
+panel.setLayout(new FlowLayout());
+
+thats all you need really, with that all the components that you add will automatically move to the next row when the first row runs out of room horizontally like when its being resized or something.
+
+you can also set alignment for componets within the flow which will make all the components align to whatever
+
+you have 5 choices:
+
+CENTER - all components will align in the center of the flow
+LEADING - all components will stick to the left of the flexbox i think
+LEFT
+RIGHT
+TRAILING - all components will stick to the right of the flexbox
+
+by default it is Center.
+
+
+you can also control the spacing by passing in 2 numbers after setting the alignment. first is horizontal spacing next is vertical spacing
+
+new FlowLayout(FlowLayout.CENTER,0,0)
+
+that will make everythign in the flow move to the center and have no spaces horizontally or vertically
+
+thats about it for flowLayout
+
+
+
+Grid layout
+
+places components in a grid of cells (squares?).
+each component take all the availabe space of the square and each square is the same size
+
+panel.setLayout(new GridLayout, 9, 1) 
+
+by default its 1 row and 1 column for each component
+
+the numbers after you specify the layout are the numbers of rows,then colums
+
+9,1 makes 9 rows and 1 column which is like the dropdown list thing add two more numbers and you can change horizontal and vertical spacing

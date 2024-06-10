@@ -1,0 +1,5 @@
+In Java, the protected keyword is an access modifier used for variables, methods, and constructors. Here’s what it does:
+
+Same Package Access: Members (variables or methods) declared as protected can be accessed by any class in the same package.
+Subclass Access: Protected members can also be accessed by subclasses in different packages, but only through inheritance.
+Restriction: Protected members cannot be accessed by classes outside the package that do not subclass the protected member’s class.

@@ -1,0 +1,20 @@
+loop through the text in the textField when it presses enter
+
+you need to look for an operator, decimals and negatives
+
+a literal is a fixed value that doesnt change during runtime
+
+a variable is a value that can or has changed during runtime
+
+a literal is better for perfomance because the computer doesnt need to ever change how much memory it needs
+
+a variable is cool because it is dynamic meaning it has opprutunity to change and grow.
+
+but it is less performant because the computer has the adjust how much memeory it will give the variable.
+
+a literal can become a variable.
+
+String a = "hello";  is a fixed value it is a literal.
+
+
+a = "bye"  is now not fixed during eecution. it is now a variable.

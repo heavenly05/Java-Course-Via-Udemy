@@ -1,0 +1,20 @@
+Java packages
+
+packages are used to group related classes.
+
+almost everything used in java are classes
+
+import javax.swing.JFrame
+
+
+
+
+javax - a library/group of packages java is another library
+
+swing - a package from the javax library with many classes we can use in it.
+
+JFrame - a class from the swing library.
+
+
+
+packages are basically folders that hold class files. it seperates your code and allow you to use classes in a more ordered manner.

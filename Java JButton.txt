@@ -1,0 +1,123 @@
+Java JButton
+
+JButtons are gui components that perform an action when clicked on
+
+import javax.swing.JButton
+
+JButton button = new JButton;
+
+for the frame to listen for events you must implement the ActionListener class
+
+import the java.awt.event.ActionionListener class
+
+you then have to use the action performed method to run action on events.
+
+@Override
+public void actionPerformed(ActionEvent e){}
+
+I will explain from the top
+
+An interface is similar to a class, but it contains only method signatures without bodies and decalarations.
+
+interfaces make classes that implement them be forced to "implement" a method but it lets the class choose wht to put in the bodyy of the method as long as it contsains allthe methods and parametes the interface request.
+
+themethod that the class is forced to imlement is the actionPerfomed method.
+im not exactly sure why it has to be forced but my theory is thatsince you have to provide the method  theres some other function that calls the forced method which is why its public
+same here you can use
+
+When you use @Override before a method in a child class, you’re explicitly telling the compiler that this method intends to override a method from its parent class (or interface).
+
+
+so now for the button thingy. within the implented method you have to write 
+if(e.getSource()==button)
+this will run code if the source of the action was on the button
+
+last part is adding the action listener onto the button, to do that you use the
+
+button.addActionListener(this)
+
+because you implemented the action listener the class is a subclass of the action lsitener and it has a coppy of everything from action lsitener interface and it basically finds the actionPerformed method and runs it.
+
+instead you can use a lamda expression (arrow function) 
+
+e -> //code to run
+if you put that in the action listener it will run that code
+the button acts like a container
+.setBounds(x,y,width,height)
+.setText("string")
+.setFocusable() makes it so the button cant be highlighted  by the annoying border thingy
+.setIcon(icon) allows you to a add a icon image intot he button
+.setHorizontalTextPosition(JButton.CENTER/RIGHT/LEFT) allows you to set the orizontal position of the text in the button
+.setVerticalTextPosition(JButton.CENTER/BOTTOM/TOP) allows you to set the vertical position of the text in the button
+.setIconTextGap(12) lets you change the gap between text and image
+.setForground(color)
+.setBackground(color)
+.setBorder(BorderFactory.createLineBorder())
+.setEnabled() used to toggle a button on and off
+
+you can use.setVisible on any Jframe component i think
+
+
+JRadioButton allows you to get values from a user using a radio buttons.
+
+you know the protocol import it and then what you can do is if you only want one radio button selected at a  time you use the ButtonGroup object. you just create a ButtonGroup group = new ButtonGroup();\
+
+group.add(rButton)
+
+and that makes it so you can only select one at a time
+
+JComboBox is like the <option> in html. all you have to do is pass in an array when declaring the combo box object.
+
+comboBox.getSelectedItem()
+
+.setEditable - allows the user to search for something 
+
+.addItem(referencetype/data) 
+
+.insertItemAt(item, index)
+removeItem(object/index)
+
+JSlider allows you to get input from users via slider.
+
+new JSlider(lowest Num, Highest Num, Starting Point)
+
+.setPaintTicks() - ask if you want to show visible ticks/notches those little lines on your ruler
+
+.setMinorTickSpacing() - sets the distance between the little notches
+
+.setMajorTickSpacing() - sets the distance between the bigger notches
+
+.setPaintTrack() - ask if you want to show visible ticks/notches those bigger lines on your ruler
+
+.setPaintLabels() lets you see the numbers under the notches or without the notches
+
+.setOrientation(SwingConstants.VERTICAL/HORIZONTAL)
+
+slider.getValue()
+
+public void stateChanged(ChangeEvent e)
+
+slider.addChnageListener(this);
+
+JMenu allows you to make menu bars and add menu items to the bar
+
+new JMenu("File")
+
+that creates a menu that can have items onto it but tit needs to be added on to a menuBar/
+
+new JMenuBar()
+
+JMenuBar.add(file)
+
+to add a menuitem you need a menuitem object
+
+new JMenuItem("Save")
+
+fileMenu.add(save) 
+
+you can add actionListeners onto the menuitems to do something when a user clicks on it
+
+.setMnemonic(KeyEvent.VK_L) - allows you to link a objects actionlistener with a keyevent meaning pressing a key can run that pbjects action
+
+.setIcon()
+

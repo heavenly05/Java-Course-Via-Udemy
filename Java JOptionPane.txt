@@ -1,0 +1,52 @@
+Java JOptionPane
+
+standard dialog box that prompts the user for a value or informs them of something
+
+import javas.swing.JOptionPane
+
+you will rarely need to create objects for a JOptionPane
+
+methods:
+
+JOptionPade.showMessageDialog(parentComponent,message, title, messageType)
+
+null for parent normally if you dont have any
+
+message for th message you want to display
+
+title for the title of the box and message Type depending on what you want normally jsut a plain message so you go
+
+JOptionPane.PLAIN_MESSAGE
+
+you can use the hover thing to see what other style they have
+
+dialogue box jsut displays a message.
+
+JOptionPane.showConfirmDialogue(parent, message, title, option type)
+returns a interger.
+
+yes - 0
+no - 1
+cancel - 2
+exit - -1
+
+depending on what style type you chose.
+
+to get input
+
+String name = JOptionPane.showInputDialog(message)
+
+full thing for all inputs
+
+(parent, message, title, optionType, messageType, icon, option, initial value)
+
+option type is the buttons you want to add, yes no cancel
+
+messageType, the style of the message default is plain text
+
+
+icon, the icon thatll be displayed you have to set it to you owns ImageIcon
+
+option, let you create your own option like for the buttons. you must put in an array of strings corresponding to the umber of buttons or something
+
+initial value, the value of button you initially want selected, 0 for yes for example

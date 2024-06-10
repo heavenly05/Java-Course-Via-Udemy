@@ -1,0 +1,15 @@
+JTextField 
+
+A GUI textbox component that can be used to get set or add text
+
+the first thing you need to set up is the ActionListener interface on your frame/window so that it can listen for keys.
+
+one way is to implement the ActionListener interface on the jframe and override the actionPerformed method from it
+
+import javax.swing.JTextField
+
+JTextField textField = new JTextField()
+
+thats about it really.
+
+you can create a button to submit the text using the .getText method.

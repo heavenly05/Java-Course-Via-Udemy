@@ -1,0 +1,38 @@
+Java Inheritance
+
+Inheritance is one of the cornerstones of object-oriented programming because it allows 
+the creation of hierarchical classifications. Using inheritance, you can create a general class 
+that defines traits common to a set of related items. This class can then be inherited by 
+other, more specific classes, each adding those things that are unique to it. In the terminology 
+of Java, a class that is inherited is called a superclass. The class that does the inheriting is 
+called a subclass. Therefore, a subclass is a specialized version of a superclass. It inherits 
+all of the members defined by the superclass and adds its own, unique elements.
+
+
+
+As you can see, the subclass B includes all of the members of its superclass, A. This is 
+why subOb can access i and j and call showij( ). Also, inside sum( ), i and j can be referred 
+to directly, as if they were part of B.
+Even though A is a superclass for B, it is also a completely independent, stand-alone 
+class. Being a superclass for a subclass does not mean that the superclass cannot be used 
+by itself. Further, a subclass can be a superclass for another subclass.
+The general form of a class declaration that inherits a superclass is shown here:
+Chapter 8 Inheritance 163
+Part I
+class subclass-name extends superclass-name {
+ // body of class
+}
+
+n the preceding examples, classes derived from Box were not implemented as efficiently 
+or as robustly as they could have been. For example, the constructor for BoxWeight
+explicitly initializes the width, height, and depth fields of Box. Not only does this duplicate 
+code found in its superclass, which is inefficient, but it implies that a subclass must be 
+granted access to these members. However, there will be times when you will want to create 
+a superclass that keeps the details of its implementation to itself (that is, that keeps its data 
+members private). In this case, there would be no way for a subclass to directly access or 
+initialize these variables on its own. Since encapsulation is a primary attribute of OOP, it is 
+not surprising that Java provides a solution to this problem. Whenever a subclass needs to 
+refer to its immediate superclass, it can do so by use of the keyword super.
+super has two general forms. The first calls the superclass’ constructor. The second is 
+used to access a member of the superclass that has been hidden by a member of a subclass. 
+Each use is examined here.

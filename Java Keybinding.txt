@@ -1,0 +1,13 @@
+Java Keybinding
+
+keybindings allow you to bind an Action to a keystroke.
+
+it doesnt require you to click a component to focus on it and all swing components have key bindings.
+
+increased flexibility than key listener
+
+ and you can assign key strokes to individual swing componenets 
+
+it is more difficult to utilize and set up
+
+i dont really care for this one you can go watch bro code video if youd liek to use it. it starts at like 9:27:00 

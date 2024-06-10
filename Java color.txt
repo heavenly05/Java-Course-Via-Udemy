@@ -1,0 +1,5 @@
+Java Choose color
+
+JColorChooser olor = newJColorChooser()
+
+Color color = JColer.showDialog(paren/null, "Title o window", initial color)

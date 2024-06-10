@@ -1,0 +1,135 @@
+Java Paint Methods 
+
+Certainly! Here's a comprehensive list of methods from the `Graphics2D` class in Java along with descriptions of what they do:
+
+1. **Shape Rendering Methods**:
+    - `draw(Shape s)`: Draws the outline of a shape.
+    - `fill(Shape s)`: Fills the interior of a shape.
+
+2. **Text Rendering Methods**:
+    - `drawString(String str, int x, int y)`: Renders a string of text at the specified location.
+    - `drawGlyphVector(GlyphVector g, float x, float y)`: Renders a `GlyphVector`.
+
+3. **Image Rendering Methods**:
+    - `drawImage(Image img, int x, int y, ImageObserver observer)`: Draws an image at the specified location.
+    - `drawRenderedImage(RenderedImage img, AffineTransform xform)`: Renders a `RenderedImage`.
+
+4. **Coordinate Transformation Methods**:
+    - `translate(int x, int y)`: Translates the origin of the `Graphics2D` context to the point `(x, y)` in the current coordinate system.
+    - `rotate(double theta)`: Rotates the `Graphics2D` context around the current origin by the specified angle.
+    - `scale(double sx, double sy)`: Scales the `Graphics2D` context by the specified amounts in the x and y directions.
+
+5. **Color and Paint Control Methods**:
+    - `setColor(Color c)`: Sets the current color.
+    - `setPaint(Paint p)`: Sets the paint attribute for the `Graphics2D` context.
+
+6. **Stroke Control Methods**:
+    - `setStroke(Stroke s)`: Sets the stroke setting for the `Graphics2D` context.
+
+7. **Composite Control Methods**:
+    - `setComposite(Composite comp)`: Sets the composite setting for the `Graphics2D` context.
+
+8. **Rendering Hints Control Methods**:
+    - `setRenderingHint(RenderingHints.Key hintKey, Object hintValue)`: Sets the value of a single preference for the rendering algorithms.
+
+9. **Clip Control Methods**:
+    - `clip(Shape s)`: Intersects the current clip with the interior of a specified `Shape` and sets the clip to the resulting intersection.
+
+These methods allow you to control how 2D graphics are rendered in Java. For detailed descriptions and usage of each method, you can refer to the official Java documentation¹². If you have any specific questions about a particular method, feel free to ask!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+EXTRA
+Drawing Methods:
+draw(Shape s)
+drawImage(Image img, AffineTransform xform, ImageObserver obs)
+drawImage(BufferedImage img, BufferedImageOp op, int x, int y)
+drawRenderedImage(RenderedImage img, AffineTransform xform)
+drawRenderableImage(RenderableImage img, AffineTransform xform)
+drawString(String str, int x, int y)
+drawString(String str, float x, float y)
+drawString(AttributedCharacterIterator iterator, int x, int y)
+drawString(AttributedCharacterIterator iterator, float x, float y)
+drawGlyphVector(GlyphVector g, float x, float y)
+drawChars(char[] data, int offset, int length, int x, int y)
+drawBytes(byte[] data, int offset, int length, int x, int y)
+drawArc(int x, int y, int width, int height, int startAngle, int arcAngle)
+drawLine(int x1, int y1, int x2, int y2)
+drawOval(int x, int y, int width, int height)
+drawPolygon(int[] xPoints, int[] yPoints, int nPoints)
+drawPolyline(int[] xPoints, int[] yPoints, int nPoints)
+drawRect(int x, int y, int width, int height)
+drawRoundRect(int x, int y, int width, int height, int arcWidth, int arcHeight)
+Filling Methods:
+fill(Shape s)
+fillArc(int x, int y, int width, int height, int startAngle, int arcAngle)
+fillOval(int x, int y, int width, int height)
+fillPolygon(int[] xPoints, int[] yPoints, int nPoints)
+fillRect(int x, int y, int width, int height)
+fillRoundRect(int x, int y, int width, int height, int arcWidth, int arcHeight)
+State Management Methods:
+addRenderingHints(Map<?,?> hints)
+clip(Shape s)
+clipRect(int x, int y, int width, int height)
+copyArea(int x, int y, int width, int height, int dx, int dy)
+dispose()
+getBackground()
+getClip()
+getClipBounds()
+getClipBounds(Rectangle r)
+getClipRect()
+getComposite()
+getDeviceConfiguration()
+getFont()
+getFontMetrics()
+getFontMetrics(Font f)
+getFontRenderContext()
+getPaint()
+getRenderingHint(RenderingHints.Key hintKey)
+getRenderingHints()
+getStroke()
+getTransform()
+hit(Rectangle rect, Shape s, boolean onStroke)
+rotate(double theta)
+rotate(double theta, double x, double y)
+scale(double sx, double sy)
+setBackground(Color color)
+setClip(Shape clip)
+setClip(int x, int y, int width, int height)
+setColor(Color c)
+setComposite(Composite comp)
+setFont(Font font)
+setPaint(Paint paint)
+setPaintMode()
+setRenderingHint(RenderingHints.Key hintKey, Object hintValue)
+setRenderingHints(Map<?,?> hints)
+setStroke(Stroke s)
+setTransform(AffineTransform Tx)
+setXORMode(Color c1)
+shear(double shx, double shy)
+transform(AffineTransform Tx)
+translate(int x, int y)
+translate(double tx, double ty)
+
+repaint() calls the repaint method

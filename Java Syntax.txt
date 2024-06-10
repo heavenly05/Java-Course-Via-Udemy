@@ -1,0 +1,176 @@
+Java Syntax
+
+Java is case sensitive when declaring variables so myVar isnt the same as myvar
+
+method/function names normally use camel case
+
+the file extensiion is .java
+
+curly braces to represent the beginning and end of code {}
+
+each stattement ends with a semicolon ;
+
+ comments can be single-line (// comment), multi-line (/* comment */), or documentation (/** documentation */).
+
+ final is a keyword basically like const in javascript.
+
+superclass(parent) the class being inherited/extended from
+and subclass(child) the class that inherits or extends from another class
+
+you can use it to get values and things from other classes and create new forms of classes based ona  existing cass like a cllass aanimal can parent a class named pig or something
+
+the abstract keyword is used to create a class that cant create object and only extend other classes
+
+an enum is a special class that represent a group of unchangeable variabe like how you use final
+
+you can access enum constants with dot sntax
+
+enums are by default pubic static and finally
+
+it has a .values() method that return an array of the enum
+
+to import packages into java you use import package.name.class or package.name.* to import all of the content in a java file.
+
+
+theres a iterator class in the util package it like let you iterate over things without a loop
+
+java.util.Iterator
+
+Iterator<String> it = cars.iterator();
+
+the iterator method is used to get the iterator of any colection
+
+it has the hasNext() and next() method. has next checks if the current collection has another vaue and next moves the iterator over the value allowing you to do what you need.
+
+its usefu because for some reason you cant use the for each loop t remove items from an array but you can use the iterator.
+
+java also uses try and catch to try to test cdoe and runs the catch if it resuts in an error and you can use the finally codeblock to run code regardless of the outcome
+
+you can also create threads ykow the thing that executes a task but im not trying to type alat so if you ever need it go on w3 schools or something
+
+java also has a copy of the arrow function that goes like (parameters) -> {//code to run} rememebr ssince its a fuction it can take in parameters from methods tey can be stored in vairables and stuff too
+
+when you use the full name of a data tye to declare a variable they are caled wrapper classes they are ways to use primtive data types as reference data types reference data types contains useful method that can be used with collection (imported classes)
+
+i screenshoted a image that expains what a primitive and reference data tyoe is.
+
+theres a file that explains it if you need it too.
+
+you can make arrays of objects by using the name of the objects class instead of a primitive value
+
+you can use objects as parameers by doing something like
+
+public void sayName(dog dog) {
+      System.out.println("The dogs name is "+ dog.Dogname);
+    }
+    public void sayNameNAge(dog dog){
+      System.out.println("The dogs name is "+ dog.Dogname + " and is " + dog.age + " years old.");
+    }
+    public void sayNameAgeNSex(dog dog){
+      System.out.println("The dogs name is "+ dog.Dogname + " and " + dog.gender + " is " + dog.age + " years old.");
+    }
+  }
+
+in our main script: 
+
+ dog myDog = new dog("Thomas", 10, Gender.she);
+    myDog.sayNameAgeNSex(myDog);
+
+it is setup so the methods will only accept objects of the dog data type. its pretty useless in the context but in other context it will be very useful but you shoud stick to the this keyword in this context.
+
+
+a package is just a collection classes and a class is a collection of code
+
+publlic means any class, package,
+
+protected means any class in any package can access it as long as long as that class is a sub class/child of the parent class the contains the protected value
+
+default is when you dont specify what you want a value to be. default means its only visible to classes withing the same packa
+private means only the class that created it can use it
+
+you should use private when you dont have a reason to use pubic or defaut for example you can make it get and setter methods withing a class so another class in a package cant change the values in the class
+
+you can do alot of things with methods. i saw a guy make a copy method to copy object. wholesome really.
+
+immutable means you cannot mutate something. strings are immutable meaning you cant change then with methods like replace. it will just create a new string literal.
+
+order of operations state that division and multiplication have higher priority than addition and subratcion. 
+
+however parentheses are the highest and are evaluated first.
+
+10 + 3 * 2 = 16
+
+(10 + 3) * 2 = 26
+
+imlicit casting happens when you try to do something with another variable and it is able to be converted from one type to another.
+
+short and int are the same thing but just have different amounts of space.
+
+short has 2 bytes like 4 or so numbers and int as 4 bytes like 8 or so numbers.
+
+short can be converted to int so when you do math with it will automatically be turned into an interger
+
+byte can be truned into short because it smaller.
+
+byte > short > int > long > float > decimal
+
+1.1 is bigger than 1
+
+Interger is a class in java with many methods like .parseInt which turns a string into a interger. same with all the other data type
+
+you can use an underscore in numbers like how we use commas to make numbers more readable
+
+123_456_789
+
+bydefault java sees numbers as intergers so you must place a uppercase or lowercase character at the end of a number value for it to be right.
+
+
+123_456_789l
+
+123_456_789b
+
+
+Primitive types are for storing simple values.
+
+Reference types are for storing complex objects
+
+
+byte > short > int > long > float > decimal > char > boolean
+
+all of the aboce are primitive types. they store less than 10 bytes of memory in total. none of them can go above 8 bytes.
+
+reference types are data types or things defined by the user. they store as much memory as they want so developers are careful when using them
+
+Scanner scanner = new Scanner()
+
+scanner is a reference type to the Scanner class
+
+String is a reference type. they can use up as much storage as they want.
+
+one difference between reference types and primitive types is family. primitive types have no methods or anything when you use the dot operator. 
+
+because reference types are objects they almost always have access to methods and other things
+
+objects are instances of classes. classes contains methods. objects get methods from classes.
+
+the critical difference between them happens to be that primitive values are independand and reference values are dependant.
+
+in memory when you create a primitive value that value will always have its own instance no matter what
+
+int x = 10;
+
+int y = x;
+
+if you change x after declaring y then y will still be 10 because y has its own instance in memory.
+
+reference types do somethimg different, 
+
+Point point1 = new Point(x, y);
+
+Point point2 = point1;
+
+point 2 is dependant on point1.
+
+if point 1 is changes so will point 2 because in memory point1 will have its own instance there. when point 2 is set to point one point1 points point2 towards its instance in memory and they just share the instance.
+
+hint reference type

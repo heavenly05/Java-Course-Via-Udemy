@@ -1,0 +1,25 @@
+methods and stuff
+
+.isEmpty() checks if a string is empty returns true or false
+
+.equals() checks if something equas something returns true or false
+
+.equalsIgnoreCase checks if a string equas something regardless of case returns true or false
+
+.length() returns int of the amound ofcharacter in a string
+
+.charAt(index) returns a char of a string using index notation
+
+.indexOf("one letter") returns an interger of an index of a character
+
+.toUpperCase()returns string with all uppercase letters
+
+.toLowerCase()returns string with all lowercase letters
+
+.trim() returns a string with all the white space removed
+
+.replace("LetterToReplace", "replaceletter") will replace all letters 
+
+.toString() returns a textual representation of almsot any value
+
+6 bill microseconds = 1 minute

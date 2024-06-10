@@ -1,0 +1,35 @@
+Java File handling
+
+to import the file class you use import java.io.File.
+
+to use it you go :
+
+File file = new File("filename.txt");
+
+the file name you enter will be the one you will be working with.
+
+i made a java file methods folder that you can read to use if you need it
+
+you can check for files outside of a project folder by specifying the path to the file in the new File() parameters
+
+
+to write in files you must import the FileWriter class.
+
+import java.io.FileWriter;
+
+FileWriter newFile = new FileWriter("filename.txt");
+
+reccomended you use try and catch bocks when writing a file
+Exception for the parameter in catch
+
+i created a file that contains the method for file writer
+
+to read a file in java you must import the FileReader Class
+
+import java.io.FileReader;
+FileReader reader = new FileReader("filetoread.txt");
+
+reccomended you use try and catch bocks when writing a file
+Exception for the parameter in catch
+
+i created a file that contains the methods for fie reader

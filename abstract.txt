@@ -1,0 +1,21 @@
+ An abstract class cannot be used to create objects (to access it, it must be inherited from another class).
+
+BUT you can use the methods in an abstract class as long as the method isnt abstract. just because you cant create an object from a class dont mean you cant use values from it. kind of like a static class
+
+pretty useful if that class is only for like information wise
+
+lie in a vido i saw it was a abstract methods full of methods that returned methods lol 
+
+ An abstract method can only be used in an abstract class, and it does not have a body. The body is provided by the subclass (inherited from)
+
+interfaces are not abstract classes. they are special classes that ony contain abstract methods.
+
+
+but the word abstraction in programming  the concept of abstraction, which is a fundamental principle that involves hiding complex details to simplify the process of working with objects or systems. It allows programmers to focus on the high-level functionality of a component without needing to understand its inner workings.
+
+Here’s a more detailed explanation:
+
+Abstraction in Programming: It’s a way of creating simple interfaces for complex systems, making them easier to handle for users and other developers1. For example, when you use a function in a programming language, you don’t need to know how the function is implemented internally; you only need to know what it does and how to use it.
+Purpose: The main purpose of abstraction is to reduce complexity by hiding the intricate details of how something works, presenting only the necessary information that is relevant for the task at hand2.
+Examples: In object-oriented programming, classes and interfaces are used to create abstract data types that represent the essential features of more complex entities3. This allows developers to work with concepts at a higher level without getting bogged down by details.
+Abstraction is a key element in software engineering, as it helps in managing complexity, promoting code reuse, and improving maintainability and scalability of software systems.

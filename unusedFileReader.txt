@@ -1,0 +1,29 @@
+ File fileRef = new File("Pink.java");
+
+    if(fileRef.exists() && fileRef.isFile()){
+      System.out.println("File Exists!");
+    }else{
+      System.out.println("File doesnt exist Writing it now");
+      try{
+      FileWriter writer = new FileWriter(fileRef.getPath());
+      writer.write("hi");
+      writer.close();
+      }catch(Exception e){
+        System.out.println("Couldnt write file");
+      }
+    }
+
+    try {
+      FileReader reader = new FileReader(fileRef);
+      if(reader.ready()){
+        System.out.println("File Read!");
+        int data = reader.read();
+        while (data > -1) {
+          System.out.print((char)data);
+          data = reader.read();
+        }
+        reader.close();
+      }
+    } catch (Exception e) {
+      System.out.println("Theres been some error while reading the file.");
+    }

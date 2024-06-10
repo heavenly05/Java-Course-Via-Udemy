@@ -1,0 +1,19 @@
+Exception Handling
+
+exceptions are unexpected events / errors that happen during runtime that disrupt the normal flow of excecution aka stop your program in the middle of executing code
+
+one way you can handle these exceptions is to use the try and catch and finally method
+
+try{
+  //code to try to run
+}catch(ErrorType err){
+//code to run if the try resulted in an eror/failed
+}finally{
+//code to run regardless if successfu or erro
+}
+
+this will handle errors without stopping your codes
+
+Exception data tpe will catch all exception
+
+you can use mutiple catch statements to address multiple errors
